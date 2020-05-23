@@ -18,7 +18,34 @@ This project forks form Asuswrt-Merlin, the goal is to fit for PHICOMM-K3.
 
 ## how to build
 
+Firsr of all you should modify cfe MAC address to your own in rt-k3_nvram.txt
+
+where to modify:
+
+et0macaddr=00:11:22:33:44:55 -> et0macaddr=XX:XX:XX:XX:XX:XX
+
+XX:XX:XX:XX:XX:XX means your own MAC address.
+
+---------------
+
 Added model RT-K3, use "make rt-k3" to compile and gen trx image.
+
+Use "make" in /release/src-rt-7.14.114.x/src/cfe/build/broadcom/bcm947xx/ to compile cfe separately.
+
+---------------
+
+Output folder:
+
+TRX image: in release/src-rt-7.14.114.x/src/image/
+
+CFE image: in release/src-rt-7.14.114.x/src/cfe/
+
+(CFE has copied to /rom/etc/ in TRX)
+
+
+## Additional pack(put into release/src/router/)
+
+K3screenctrl - https://github.com/ghostnup/k3screenctrl
 
 
 ## Credits
@@ -33,3 +60,7 @@ Lostlonger for research transplant from merlin to K3
 
 [Updateing](https://github.com/Updateing/) for making screen usable
 
+## 打赏我(buy me a beer)
+
+![alipay](https://s1.ax1x.com/2020/05/24/YxgA9f.jpg)
+![wechat](https://s1.ax1x.com/2020/05/24/YxgVgS.jpg)
